@@ -17,6 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 
 
@@ -39,7 +40,7 @@ import { CursosModule } from './cursos/cursos.module';
     MatToolbarModule,
     MatInputModule,
     MatFormFieldModule,
-    
+    AlunosModule    
   ],
   // providers: [CursosService],
   bootstrap: [AppComponent]
