@@ -1,2 +1,17 @@
-<p>alunos works!</p>
-<router-outlet></router-outlet>
+<p>
+    Lista de Alunos
+</p>
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile colspan="1"  rowspan="1">  
+        <mat-nav-list>
+            <mat-divider></mat-divider>
+            <a  mat-list-item  *ngFor="let aluno of alunos" [routerLink]="[aluno.id]">
+            {{ aluno.nome }}
+            <mat-divider></mat-divider>
+            </a>
+        </mat-nav-list>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1"  rowspan="1">
+        <router-outlet></router-outlet>
+    </mat-grid-tile>    
+</mat-grid-list>
