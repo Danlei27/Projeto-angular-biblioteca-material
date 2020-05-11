@@ -2,7 +2,7 @@
 <p>Página: {{ pagina }}</p>
 <mat-nav-list>
     <mat-divider></mat-divider>
-    <a  mat-list-item  *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]">
+    <a  mat-list-item  *ngFor="let curso of cursos" [routerLink]="['/cursos', curso.id]">
     {{ curso.nome }}
     <mat-divider></mat-divider>
     </a>

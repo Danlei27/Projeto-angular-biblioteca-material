@@ -1,1 +1,15 @@
-<p>login works!</p>
+<h3>Login</h3>
+
+<mat-form-field class="example-form">
+    <mat-label>Usuário</mat-label>
+    <input matInput [(ngModel)]="usuario.nome"  >
+</mat-form-field>
+<mat-form-field class="example-form">
+    <mat-label>Senha</mat-label>
+    <input matInput type="password" [(ngModel)]="usuario.senha">
+</mat-form-field>
+<div class="example-button-row">
+    <button mat-flat-button color="warn"  type="submit" (click)="fazerLogin()">Submit</button>
+</div>
+    
+    

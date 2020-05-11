@@ -1,10 +1,12 @@
-<mat-toolbar color="primary">
-    <button  routerLink="login" mat-button routerLinkActive="active" >Login</button>
-    <button  routerLinkActive="active" mat-button routerLink="cursos" [queryParams]="{pagina:1}" >Cursos</button>
-    <!-- <button  [routerLink]="['curso',idCurso.value]" mat-button>Curso id</button> -->
-    <button  routerLink="/alunos" mat-button>Alunos</button>
-    <button id="logo"  mat-button routerLink="" color="warn" >Rotas Angular</button> 
-</mat-toolbar>
+<nav *ngIf="mostrarMenu">
+    <mat-toolbar color="primary">
+        <button  routerLink="login" mat-button routerLinkActive="active" >Login</button>
+        <button  routerLinkActive="active" mat-button routerLink="cursos" [queryParams]="{pagina:1}" >Cursos</button>
+        <!-- <button  [routerLink]="['curso',idCurso.value]" mat-button>Curso id</button> -->
+        <button  routerLink="/alunos" mat-button>Alunos</button>
+        <button id="logo"  mat-button routerLink="" color="warn" >Rotas Angular</button> 
+    </mat-toolbar>
+</nav>
  
 
 <!-- <mat-form-field color="warn">

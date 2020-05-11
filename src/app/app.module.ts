@@ -16,9 +16,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { CursosModule } from './cursos/cursos.module';
-import { AlunosModule } from './alunos/alunos.module';
-
+import { AuthService } from './login/auth.service';
+// import { CursosModule } from './cursos/cursos.module';
+// import { AlunosModule } from './alunos/alunos.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -32,7 +33,6 @@ import { AlunosModule } from './alunos/alunos.module';
   ],
   imports: [
     AppRoutingModule,
-    CursosModule,
     BrowserModule,
     NoopAnimationsModule,
     BrowserAnimationsModule,
@@ -40,9 +40,12 @@ import { AlunosModule } from './alunos/alunos.module';
     MatToolbarModule,
     MatInputModule,
     MatFormFieldModule,
-    AlunosModule    
+    // CursosModule,
+    // AlunosModule    
+    FormsModule
   ],
   // providers: [CursosService],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
