@@ -13,6 +13,7 @@ import { MatGridListModule} from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { AlunosDeactivateGuard } from '../guards/alunos-deactivate.guard';
 
 
 @NgModule({
@@ -30,6 +31,9 @@ import { MatInputModule } from '@angular/material/input';
     ],
     exports: [],
     declarations: [AlunosComponent, AlunoFormComponent, AlunoDetalheComponent],
-    providers: [AlunosService],
+    providers: [
+        AlunosService,
+        AlunosDeactivateGuard
+    ],
 })
 export class AlunosModule { }
