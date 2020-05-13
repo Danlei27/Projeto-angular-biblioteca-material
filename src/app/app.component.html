@@ -1,6 +1,7 @@
 <nav *ngIf="mostrarMenu">
     <mat-toolbar color="primary">
         <button  routerLink="login" mat-button routerLinkActive="active" >Login</button>
+        <button  routerLink="" mat-button routerLinkActive="active" >Home</button>
         <button  routerLinkActive="active" mat-button routerLink="cursos" [queryParams]="{pagina:1}" >Cursos</button>
         <!-- <button  [routerLink]="['curso',idCurso.value]" mat-button>Curso id</button> -->
         <button  routerLink="/alunos" mat-button>Alunos</button>
