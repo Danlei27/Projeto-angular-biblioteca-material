@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { AlunosDeactivateGuard } from '../guards/alunos-deactivate.guard';
+import { AlunoDetalheResolve } from './guards/aluno-detalhe.resolver';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { AlunosDeactivateGuard } from '../guards/alunos-deactivate.guard';
     declarations: [AlunosComponent, AlunoFormComponent, AlunoDetalheComponent],
     providers: [
         AlunosService,
-        AlunosDeactivateGuard
+        AlunosDeactivateGuard,
+        AlunoDetalheResolve
     ],
 })
 export class AlunosModule { }
